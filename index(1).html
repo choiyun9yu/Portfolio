@@ -180,13 +180,13 @@ rel="stylesheet">
             </section>
 <!-- 프로필 바 섹션 끝 -->
 
-
 <!-- 포트폴리오 섹션 시작 -->
             <section class="col-md-7 col-lg-9">
                 <div class="row">
-                    <!-- <div class="pt-3 col-12 text-decoration-underline">
+
+                    <div class="pt-3 col-12 text-decoration-underline">
                         <h2 class="fw-bold">Team Project</h2>
-                    </div> -->
+                    </div>
 
                     <div class="col-lg-6 py-3">
                         <div class="card">
@@ -204,10 +204,8 @@ rel="stylesheet">
                                 </button>
 
                             <!-- 1모달 시작 -->
-                                <!-- data-bs-backdrop="static" 옵션을 주면 배경을 클릭해도 모달창이 닫히지 않는다. -->
-                                <!-- 데이터 키보드 속성을 false로 주면 esc로도 모달이 닫히지 않도록 할 수 있다. -->
-                                <div class="modal fade" id="project1-Modal" tabindex="-1" 
-                                    data-bs-keyboard="true" aria-hidden="true">
+                                <div class="modal fade" id="project1-Modal" tabindex="-1" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-lg">
                                         <div class="modal-content">  
 
@@ -284,8 +282,8 @@ rel="stylesheet">
                             </button>
 
                         <!-- 2모달 시작 -->
-                            <div class="modal fade" id="project2-Modal" tabindex="-1"
-                                data-bs-keyboard="true" aria-hidden="true">
+                            <div class="modal fade" id="project2-Modal" tabindex="-1" data-bs-backdrop="static"
+                                data-bs-keyboard="false" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">  
 
@@ -355,16 +353,19 @@ rel="stylesheet">
                             </div>
                           </div>
                     </div>
-                    
-<!-- 잔디 모달 시작 -->
+
                     <div class="col-12 py-3">
                         <div class="card text-center p-3 banner">
                             <div class="card-body">
+                                <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-outline-light px-4 rounded-pill"
                                 data-bs-toggle="modal" data-bs-target="#portfolio-Modal">
                                     <i class="bi bi-github me-1"></i> Git-hub 잔디
                                 </button>
 
+                                <!-- Modal -->
+                                <!-- backdrop을 static으로 설정하면 배경을 클릭해도 모달창이 닫히지 않는다. -->
+                                <!-- 데이터 키보드 속성을 false로 주면 esc로도 모달이 닫히지 않도록 할 수 있다. -->
                                 <div class="modal fade" id="portfolio-Modal" tabindex="-1" data-bs-backdrop="static"
                                     data-bs-keyboard="false" aria-labelledby="portfolioModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
@@ -393,10 +394,10 @@ rel="stylesheet">
                             </div>
                         </div>
                     </div>
-<!-- 잔디 모달 끝 -->
-                    <!-- <div class="pt-3 col-12 text-decoration-underline">
+
+                    <div class="pt-3 col-12 text-decoration-underline">
                         <h2 class="fw-bold">Toy Project</h2>
-                    </div> -->
+                    </div>
 
                     <div class="col-lg-6 py-3">
                         <div class="card">
@@ -413,8 +414,8 @@ rel="stylesheet">
                                 </button>
 
                             <!-- 3모달 시작 -->
-                                <div class="modal fade" id="project3-Modal" tabindex="-1"
-                                    data-bs-keyboard="true" aria-hidden="true">
+                                <div class="modal fade" id="project3-Modal" tabindex="-1" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-lg">
                                         <div class="modal-content">  
 
@@ -460,7 +461,7 @@ rel="stylesheet">
                                                     <p class="ms-3 m-1 text-lead"> </p> -->
                                             </div>
                                             <div class="modal-footer">
-                                                <a href="https://choiyun9yu.github.io/pr.Tee-Young/" class="btn btn-warning btn-sm" target="blank"> <i class="bi bi-house me-1"></i> 디자인 보기</a>
+                                                <a href="https://choiyun9yu.github.io/pr.Tee-Young/" class="btn btn-outline-dark btn-sm" target="blank"> <i class="bi bi-house me-1"></i> 디자인 보기</a>
                                                 <a href="https://github.com/choiyun9yu/pr.Tee-Young" class="btn btn-dark btn-sm" target="blank"> <i class="bi bi-github me-1"></i> 코드 보기</a>
                                                 <button type="button" class="btn btn-outline-warning btn-sm"
                                                     data-bs-dismiss="modal">닫기</button>
