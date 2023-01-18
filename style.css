@@ -44,7 +44,7 @@ h5,
 
     /* 카드배너 */ 
     .banner{
-        background-image:  url(./img/grass.jpg);
+        background-image:  url(img/grass.jpg);
         background-attachment: fixed;
         background-size: cover;
     }
