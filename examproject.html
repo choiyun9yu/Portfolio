@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연락처</title>
+    <title>실습 프로젝트</title>
 
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,7 +13,6 @@ integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WT
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <link rel="stylesheet" href="style.css">
 
-<!-- 구글 폰트 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
@@ -21,7 +20,6 @@ href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=
 rel="stylesheet">
 
 <body>
-<!-- 네비게이션 바 섹션 시작 -->
     <nav class="navbar navbar-expand-md fixed-top bg-light">
         <div class="container-fluid">
             <img src="img/logo322.png" alt="로고">
@@ -40,8 +38,9 @@ rel="stylesheet">
                     <li class="nav-item">
                         <a class="nav-link" href="profile.html">프로필</a>
                     </li>
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Project 목록
                         </a>
                         <ul class="dropdown-menu">
@@ -52,22 +51,25 @@ rel="stylesheet">
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html">연락처</a>
+                        <a class="nav-link" href="contact.html">연락처</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-<!-- 네비게이션 바 섹션 끝 -->
 
-<!-- 헤더 섹션 시작 -->
     <header>
+        <!-- 블럭잡고 cmd+shift+l 누르면 동일한 것 다 선택됨-->
         <div id="headerCarousel" class="mt-5 carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
+                <!-- 엑티브 클라스가 있는 이미지가 가장 처음으로 뜨게 된다. -->
                 <div class="carousel-item active">
+                    <!-- 이미지 사이즈는 16:5 1920x600 or 1280x400 -->
                     <img src="img/공원사진.jpg" class="d-block w-100" alt="인테리어 사진">
                     <div class="carousel-caption text-md-start">
+                        <!-- d-block 항상 보이도록 d-none은 안보이도록 설정 -->
                         <h1 class="display-4 d-block  mb-0">Yun Lab</h1>
+                         <!-- 브레이크포인트 사용해서 특정 포인트 부터 보이거나 안보이게 설정 가능하다.-->
                         <p class="d-none d-sm-block">YunLab은 'AI개발자를'를 꿈꾸는 최윤규의 실습실입니다.</p>
                     </div>
                 </div>
@@ -91,6 +93,7 @@ rel="stylesheet">
                     <img src="img/" class="d-block w-100" alt="인테리어 사진">
                     <div class="carousel-caption"></div>
                 </div> -->
+
             </div>
 
             <!-- <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
@@ -103,15 +106,12 @@ rel="stylesheet">
                 visually-hidden은 화면에 안보이게 해주는 클래스
                 <span class="visually-hidden">Next</span>
             </button>  -->
+            
         </div>
     </header>
-<!-- 헤더 섹션 끝 -->
 
-<!-- 메인 섹션 시작 -->
     <main class="container my-5">
         <div class="row">
-
-        <!-- 프로필 바 섹션 시작 -->
             <section class="col-md-5 col-lg-3">
                 <div class="bg-dark text-white text-center my-3 p-4 rounded">
                     <img src="img/일러스트.JPG" alt="프로필 사진" class="img-fluid rounded-circle p-4">
@@ -161,48 +161,16 @@ rel="stylesheet">
                     </ul>
                 </div>
             </section>
-        <!-- 프로필 바 섹션 끝 -->
-        
-        <!-- 연락처 섹션 시작 -->
-            <div class="col-md-7 col-lg-9 text-center order-1 order-md-2">
-                <section class="row pt-3 pb-5">
-                    <div class="col-lg-9 mx-auto">
-                        <h2 class="fs-1 fw-bold pb-3">Contact</h2>
-                        
-                        <div class="contact-bg py-4 mt-3">
-                            <p class="fs-4 fw-bold text-white mb-0 logo-font"><i class="bi bi-telephone-fill me-3 me-lo-5"></i>010-4792-6947</p>
-                        </div>
 
-                        <div class="contact-bg py-4 mt-3">
-                            <p class="fs-4 fw-bold text-white mb-0 logo-font"><i class="bi bi-envelope-fill me-3 me-lo-5"></i>sw22tapple@gmial.com</p>
-                        </div>
+<!-- 섹션 시작 -->
+<section class="col-md-7 col-lg-9">
 
-                        <div class="contact-bg py-4 mt-3">
-                            <p class="fs-4 fw-bold text-white mb-0 logo-font"><i class="bi bi-house-fill me-3 me-lo-5"></i>광주광역시 서구 상무버들로40번길</p>
-                        </div>
 
-                        <p class="text-muted mt-3 mb-0">우편물 발송을 위한 상세주소가 필요하신 분은 휴대전화로 먼저 연락해주시면</p>
-                        <p class="text-muted mt-0 mb-3">친절히 안내해드리겠습니다!</p>
-                    </div>
-                </section>
-
-                <hr> 
-
-                <section class="py-4">
-                    <h2 class="fs-1 fw-bold">오시는 길</h2>
-                    <p class="text-muted py-3">주소 : 광주광역시 서구 상무버들로40번길 14</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.635869300992!2d126.8592 2611591788!3d35.1657009656781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718eac3055e057%3A0x2e65738cbb6248c8!2z67KE65Ok66eI7J2E7KO86rO1MeuLqOyngOyVhO2MjO2KuA!5e0!3m2!1sko!2skr!4v1673878605072!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </section>
-            </div>
-            <!-- 연락처 섹션 끝 -->
-
+</section>
+<!-- 섹션 끝 -->
         </div>
     </main>
-<!-- 메인 섹션 끝 -->
 
-<!-- 풋터 섹션 시작 -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <div class="row">
@@ -241,7 +209,6 @@ rel="stylesheet">
             </p>
         </div>
     </footer>
-<!-- 풋터 섹션 끝 -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
